@@ -1,0 +1,23 @@
+{% extends('base.html.twig') %}
+{% block title %}
+        Movies page
+{% endblock %}
+{% block body %}
+        <h1>
+                Hey there
+                {#{% if titles %}
+                        Let's watch: <br />
+                        {% for title in titles %}
+                                {{ title->getTitle() }}
+                                <br/>
+                        {% endfor %}
+                {% elseif title %}
+                        Let's watch: {{ title }}
+                {% else %}
+                        No movies this time.
+                {% endif %} <br />#}
+                {#{% _self %}#} <!-- It's not working -->
+                {#{% _charset %}#} <!-- It's not working -->
+                {#{% author %}#} <!-- Not working. Even with adding to twig yaml config file -->
+        </h1>
+{% endblock %}
